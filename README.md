@@ -4,7 +4,7 @@ An implementation of two adaptations to Davies &amp; Böck's beat-tracking tempo
 
 ## Usage
 
-Train:
+Run:
 ```
 1. 修改config.yaml的文件路径,指定为自己的数据  
 2. 运行Step1_dataprocess.py,得到处理好的数据
