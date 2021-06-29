@@ -1,7 +1,3 @@
-"""
-Coursework 1: Beat Tracking
-Descrption: Utility functions for computing and trimming mel spectrograms.
-"""
 import os
 
 import librosa
