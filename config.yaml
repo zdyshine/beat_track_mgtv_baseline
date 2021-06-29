@@ -1,0 +1,65 @@
+# dataset
+
+# train
+dataset_folder_train: "~/dataset/original/wav"  # 下面是10个子文件夹，每个里面有100个wav
+label_folder_train: "~/dataset/original/beat" # 下面是10个子文件夹，每个里面有100个beat
+spec_folder_train: "./data/train/" # 输出的频谱图保存路径
+# val
+dataset_folder_val: "~/dataset/original/mgtv/"
+label_folder_val: "~/dataset/original/mgtv/"
+spec_folder_val: "./data/val/" # 输出的频谱图保存路径
+
+# eval
+default_checkpoint_path: "./model/TCN/_Epoch50.pt"
+
+
+# model and log
+model_folder: "./models/TCN/"
+# create mel spectrogram
+fft_size: 2048
+hop_length: 0.01
+n_mels: 81
+sample_rate: 22050 # 22050 # 44100
+trim_size:
+  - 81
+  - 3000
+
+# model parameters
+input_size:
+  - 3000
+  - 81
+output: 3000
+CNN_filters:
+  - 16
+  - 16
+  - 16
+CNN_filter_size:
+  -
+    - 3
+    - 3
+  -
+    - 3
+    - 3
+  -
+    - 1
+    - 8
+CNN_pool_size:
+  -
+    - 1
+    - 3
+  -
+    - 1
+    - 3
+TCN_filters: 16
+TCN_kernel_size: 5
+dropout: 0.1
+
+# training settings
+num_epoch: 130
+batch_size: 32 # 1
+optimizer: 'Adam'
+learning_rate: 0.001
+k_fold: 10
+
+# CUDA
+cuda: True
