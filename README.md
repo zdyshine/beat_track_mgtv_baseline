@@ -6,7 +6,7 @@ An implementation of two adaptations to Davies &amp; Böck's beat-tracking tempo
 
 Train:
 ```
-1. 修改coonfig.yaml的文件路径,指定为自己的数据  
+1. 修改config.yaml的文件路径,指定为自己的数据  
 2. 运行Step1_dataprocess.py,得到处理好的数据
 3. 运行Step2_train.py,开始进行训练
 4. 运行Step3_beat_tracker.py,得到beat文件
