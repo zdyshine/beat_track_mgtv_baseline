@@ -10,6 +10,9 @@ Run:
 2. 运行Step1_dataprocess.py,得到处理好的数据
 3. 运行Step2_train.py,开始进行训练
 4. 运行Step3_beat_tracker.py,得到beat标注文件
+####################
+5. run.py提交样例代码，选手根据自己的情况进行修改
+####################
 ```
 
 ## References
